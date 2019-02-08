@@ -135,10 +135,10 @@
                 android:layout_below="@+id/tbtnlayout"
                 android:layout_marginTop="15dp"
                 android:layout_toStartOf="@+id/textView20"
-                android:max="60"
+                android:max="41"
                 android:paddingEnd="15dp"
                 android:paddingStart="15dp"
-                android:progress="36"
+                android:progress="38"
                 android:progressDrawable="@drawable/progress"
                 android:thumb="@drawable/thumb" />
 
@@ -188,7 +188,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:entries="@array/array_illness"/>
+                    android:entries="@array/array_illness" />
 
             </LinearLayout>
 
@@ -259,14 +259,34 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/textView18"
+                android:layout_below="@+id/imageView4"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="15dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:background="@android:color/transparent"
                 android:ems="10"
                 android:hint="Optional Notes"
                 android:inputType="textMultiLine" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textView18"
+                android:layout_marginRight="15dp"
+                app:srcCompat="@drawable/ic_action_camera" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/editText4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                app:srcCompat="@drawable/bdge_white" />
 
         </RelativeLayout>
     </ScrollView>
@@ -281,11 +301,11 @@
         android:layout_marginBottom="5dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:textSize="18sp"
-        android:text="Add Activity"
         android:background="@drawable/my_button"
+        android:text="Add Activity"
         android:textColor="@color/Chocolate"
-        android:textStyle="bold"/>
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 
 
