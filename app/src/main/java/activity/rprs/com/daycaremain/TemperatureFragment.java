@@ -168,7 +168,7 @@ public class TemperatureFragment extends Fragment implements View.OnClickListene
         pickimg=(ImageView) view.findViewById(R.id.imageView4);
         edittimeimg.setOnClickListener(this);
         pickimg.setOnClickListener(this);
-        imageViewset=(ImageView)view.findViewById(R.id.imageView25);
+        imageViewset=(ImageView)view.findViewById(R.id.imageView5);
 
         cal = Calendar.getInstance();
         mHour = cal.get(Calendar.HOUR_OF_DAY);
@@ -397,7 +397,7 @@ public class TemperatureFragment extends Fragment implements View.OnClickListene
                 HashMapParams.put("notiftext", "Medical emergency "+spillnes.getSelectedItem().toString());
                 HashMapParams.put("time", mHour+":"+mMinute);
                 HashMapParams.put("image_path", ConvertImage);
-                HashMapParams.put("image_name", DataClass.Stud_id+fDate2);
+                HashMapParams.put("image_name", "medical"+DataClass.Stud_id+fDate2);
                 String FinalData = imageProcessClass.ImageHttpRequest(ServerUploadPath, HashMapParams);
                 return FinalData;
             }
