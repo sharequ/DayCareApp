@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">DayCareMain</string>
+
+    <string name="meal">Add Meal Detail</string>
+    <string name="meal1">Add Meal 1</string>
+    <string name="meal2">Add Meal 2</string>
+    <string name="meal3">Add Meal 3</string>
+    <string name="meal4">Add Meal 4</string>
+
+    <string name="naptime1">My nap time1</string>
+    <string name="naptime2">My nap time2</string>
+
+    <string name="washr1">Wash Room/Diaper 1</string>
+    <string name="washr2">Wash Room/Diaper 2</string>
+    <string name="washr3">Wash Room/Diaper 3</string>
+    <string name="washr4">Wash Room/Diaper 4</string>
+    <string name="washr5">Wash Room/Diaper 5</string>
+    <string name="washr6">Wash Room/Diaper 6</string>
+
+    <string name="Medicine">Medicine Given</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="array_leave">
+        <item>One day</item>
+        <item>Multiple Days</item>
+        <item>Across Session</item>
+    </string-array>
+
+    <string-array name="array_leavesess">
+        <item>First</item>
+        <item>Second</item>
+    </string-array>
+
+    <string-array name="array_illness">
+        <item>Headache</item>
+        <item>Fever</item>
+        <item>Cold</item>
+        <item>Vomiting</item>
+        <item>Loose motion</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="array_medicinests">
+        <item>Given</item>
+        <item>Not given</item>
+        <item>Not found</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line"><!--remove shape when not use line-->
+
+    <!--<gradient
+        android:angle="90"
+        android:centerColor="#FF555555"
+        android:endColor="#FF555555"
+        android:startColor="#FF555555" />
+
+    <corners android:radius="1dp" />
+
+    <stroke
+        android:width="1dp"
+        android:color="#50999999" />
+    <stroke
+        android:width="1dp"
+        android:color="#70555555" />-->
+
+    <!--for single line color-->
+        <stroke android:width="3dp" android:color="@color/Gray"/>
+        <corners android:radius="1dp" />
+
+</shape>
