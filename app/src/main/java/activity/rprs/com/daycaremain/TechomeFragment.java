@@ -22,18 +22,20 @@ public class TechomeFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    TextView textView1,textView2,textView3;
+    //TextView textView1,textView2,textView3;
     Context context;
 
-    /*ListView listView;
-    String[] animalName={"Attendance","Bulk Activity","Individual Activity"};
+    ListView listView;
+    String[] animalName={"Check In/Check Out","Attendance","Bulk Activity","Individual Activity","Apply Leave"};
 
     final int[] ICONS = new int[]{
+            R.drawable.status_checkin,
             R.drawable.bdge_attendance,
             R.drawable.bdge_teamwork,
-            R.drawable.bdge_congs
+            R.drawable.bdge_congs,
+            R.drawable.ic_action_date
     };
-    ParenthomeAdapter adapter;*/
+    ParenthomeAdapter adapter;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -73,13 +75,13 @@ public class TechomeFragment extends Fragment {
 
         context=getActivity();
 
-        /*listView=(ListView)view.findViewById(R.id.listvhome);
+        listView=(ListView)view.findViewById(R.id.listvhome);
 
         adapter=new ParenthomeAdapter(animalName,context,ICONS);
-        listView.setAdapter(adapter);*/
+        listView.setAdapter(adapter);
 
 
-        textView1=(TextView)view.findViewById(R.id.textView);
+        /*textView1=(TextView)view.findViewById(R.id.textView);
         textView2=(TextView)view.findViewById(R.id.textView2);
         textView3=(TextView)view.findViewById(R.id.textView3);
 
@@ -103,27 +105,35 @@ public class TechomeFragment extends Fragment {
                 Intent intent=new Intent(context,ChildsActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
-        /*listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 0:
+                        Intent intent=new Intent(context,TecCheckinActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 1:
                         Intent intent1=new Intent(context,TecattendanceActivity.class);
                         startActivity(intent1);
                         break;
-                    case 1:
+                    case 2:
                         Intent intent2=new Intent(context,TecBulkActivity.class);
                         startActivity(intent2);
                         break;
-                    case 2:
+                    case 3:
                         Intent intent3=new Intent(context,ChildsActivity.class);
                         startActivity(intent3);
                         break;
+                    case 4:
+                        Intent intent4=new Intent(context,TecattendanceActivity.class);
+                        startActivity(intent4);
+                        break;
                 }
             }
-        });*/
+        });
 
         return view;
     }

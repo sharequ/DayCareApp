@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegiEmailActivity"
+    tools:context=".RegiPhoneActivity"
     android:background="@color/DarkSeaGreen">
 
     <ImageView
@@ -33,7 +33,7 @@
             android:background="@drawable/my_textback"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
-            android:text="Email"
+            android:text="Mobile Number"
             android:textAlignment="center"
             android:textColor="@color/White"
             android:textSize="20sp"
@@ -49,7 +49,7 @@
             android:layout_toEndOf="@+id/textView13"
             android:layout_weight="1"
             android:background="@drawable/my_textbackwht"
-            android:inputType="textEmailAddress"
+            android:inputType="phone"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp" />

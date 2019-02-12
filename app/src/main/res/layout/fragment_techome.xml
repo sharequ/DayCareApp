@@ -6,7 +6,7 @@
     android:background="@color/appbackground"
     tools:context=".TechomeFragment">
 
-    <LinearLayout
+    <!--<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -118,15 +118,15 @@
 
         </RelativeLayout>
 
-    </LinearLayout>
+    </LinearLayout>-->
 
-    <!--<ListView
+    <ListView
         android:id="@+id/listvhome"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="5dp"
         android:divider="@color/Gray"
-        android:dividerHeight="5dp" />-->
+        android:dividerHeight="5dp" />
 
 </RelativeLayout>
