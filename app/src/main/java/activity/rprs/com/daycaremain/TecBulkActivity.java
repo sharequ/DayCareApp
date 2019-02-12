@@ -129,6 +129,7 @@ public class TecBulkActivity extends AppCompatActivity implements View.OnClickLi
 
     @Override
     public void onClick(View v) {
+        DataClass.liststudids.clear();
         for (int i = 0; modelist.size() > i; i++) {
             TecAttendmodel mmmd = modelist.get(i);
             if (mmmd.getState()) {

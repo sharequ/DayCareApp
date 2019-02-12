@@ -11,9 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" >
+        <activity android:name=".RegiEmailActivity"></activity>
+        <activity
+            android:name=".RegcommonActivity"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".ChildsActivity" />
         <activity android:name=".ParentsfeedActivity" />
         <activity
@@ -21,12 +29,15 @@
             android:theme="@style/AppTheme2" />
         <activity
             android:name=".TeacherhomeActivity"
-            android:theme="@style/AppTheme2" >
+            android:theme="@style/AppTheme2">
+
+            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            -->
         </activity>
         <activity android:name=".TecattendanceActivity" />
         <activity android:name=".TecBulkActivity" />
@@ -35,17 +46,20 @@
             android:name=".TecbulkfraglistActivity"
             android:theme="@style/AppTheme2" />
         <activity android:name=".ParentHomeActivity">
+
+            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            -->
         </activity>
         <activity android:name=".ParInboxActivity" />
         <activity android:name=".ParPdfdownloadActivity" />
         <activity android:name=".ParChatteachActivity" />
         <activity android:name=".ParPaymentActivity" />
-        <activity android:name=".ParLeaveActivity"></activity>
+        <activity android:name=".ParLeaveActivity" />
     </application>
 
 </manifest>
